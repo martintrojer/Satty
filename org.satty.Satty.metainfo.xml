@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.satty.Satty</id>
+
+  <name>Satty</name>
+  <summary>Modern Screenshot Annotation</summary>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MPL-2.0</project_license>
+
+  <description>
+    <p>
+      Satty is a screenshot annotation tool inspired by Swappy and Flameshot.
+      It provides a simple and easy to understand toolset for annotating screenshots
+      with hardware-accelerated rendering via OpenGL.
+    </p>
+    <p>Features include:</p>
+    <ul>
+      <li>Simple and intuitive annotation tools (brush, arrow, rectangle, ellipse, text, marker, blur, highlight)</li>
+      <li>Fullscreen annotation mode with post-shot cropping</li>
+      <li>Extremely smooth rendering thanks to hardware acceleration (OpenGL)</li>
+      <li>Works on wlroots-based compositors (Sway, Hyprland, River, etc.)</li>
+      <li>Modern UI built with GTK4 and Adwaita</li>
+      <li>IME support for international text input</li>
+      <li>Configurable keyboard shortcuts</li>
+      <li>Save to clipboard or file</li>
+    </ul>
+  </description>
+
+  <launchable type="desktop-id">org.satty.Satty.desktop</launchable>
+
+  <url type="homepage">https://github.com/Satty-org/Satty</url>
+  <url type="bugtracker">https://github.com/Satty-org/Satty/issues</url>
+  <url type="vcs-browser">https://github.com/Satty-org/Satty</url>
+
+  <developer id="org.satty">
+    <name>Satty Developers</name>
+  </developer>
+
+  <branding>
+    <color type="primary" scheme_preference="light">#f5c211</color>
+    <color type="primary" scheme_preference="dark">#986a44</color>
+  </branding>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Annotating a screenshot with Satty</caption>
+      <image>https://raw.githubusercontent.com/Satty-org/Satty/master/assets/screenshot.png</image>
+    </screenshot>
+  </screenshots>
+
+  <content_rating type="oars-1.1" />
+
+  <releases>
+    <release version="0.20.0" date="2024-12-01">
+      <description>
+        <p>New features and improvements:</p>
+        <ul>
+          <li>Tool selection keyboard shortcuts are now configurable</li>
+          <li>Save using file dialog with Ctrl+Shift+S</li>
+          <li>IME support for international text input</li>
+          <li>Fill shapes by default option</li>
+          <li>Focus toggles toolbars option</li>
+          <li>Output filename can now contain tilde (~) for home directory</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+
+  <provides>
+    <binary>satty</binary>
+  </provides>
+
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+
+  <categories>
+    <category>Graphics</category>
+    <category>Utility</category>
+  </categories>
+
+  <keywords>
+    <keyword>screenshot</keyword>
+    <keyword>annotation</keyword>
+    <keyword>wayland</keyword>
+    <keyword>editing</keyword>
+    <keyword>image</keyword>
+  </keywords>
+</component>

@@ -43,8 +43,8 @@ modules:
       - install -Dm755 target/release/satty /app/bin/satty
       - install -Dm644 satty.desktop /app/share/applications/org.satty.Satty.desktop
       - install -Dm644 assets/satty.svg /app/share/icons/hicolor/scalable/apps/org.satty.Satty.svg
-      - install -Dm644 LICENSE /app/share/licenses/org.satty.Satty/LICENSE
       - install -Dm644 org.satty.Satty.metainfo.xml /app/share/metainfo/org.satty.Satty.metainfo.xml
+      - install -Dm644 LICENSE /app/share/licenses/org.satty.Satty/LICENSE
       - install -Dm644 completions/satty.bash /app/share/bash-completion/completions/satty
       - install -Dm644 completions/satty.fish /app/share/fish/vendor_completions.d/satty.fish
       - install -Dm644 completions/satty.elv /app/share/elvish/lib/satty.elv
@@ -53,5 +53,9 @@ modules:
       - sed -i 's|^TryExec=satty|TryExec=/app/bin/satty|' /app/share/applications/org.satty.Satty.desktop
       - sed -i 's|^Icon=satty|Icon=org.satty.Satty|' /app/share/applications/org.satty.Satty.desktop
     sources:
-      - type: dir
-        path: .
+      - type: git
+        url: https://github.com/Satty-org/Satty.git
+        tag: v0.20.0
+        x-checker-data:
+          type: git
+          tag-pattern: "^v([\\d.]+)$"
