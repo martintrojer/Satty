@@ -39,14 +39,14 @@ All configuration is done either at the config file in `XDG_CONFIG_DIR/.config/s
 
 - <kbd>Enter</kbd>: as configured (see below), default: copy-to-clipboard
 - <kbd>Esc</kbd>: as configured (see below), default: exit
-- <kbd>Delete</kbd> reset (clear) <sup>experimental</sup> <sup>NEXTRELEASE</sup>
+- <kbd>Delete</kbd> reset (clear) <sup>experimental</sup> <sup>0.20.1</sup>
 - <kbd>Ctrl+C</kbd>: Save to clipboard
 - <kbd>Ctrl+S</kbd>: Save to specified output file
 - <kbd>Ctrl+Shift+S</kbd>: Save using file dialog <sup>0.20.0</sup>
 - <kbd>Ctrl+T</kbd>: Toggle toolbars
 - <kbd>Ctrl+Y</kbd>: Redo
 - <kbd>Ctrl+Z</kbd>: Undo
-- <kbd>Alt</kbd>+(<kbd>Left</kbd>/<kbd>Right</kbd>/<kbd>Up</kbd>/<kbd>Down</kbd>): Pan, also available with middle mouse button drag <sup>NEXTRELEASE</sup>
+- <kbd>Alt</kbd>+(<kbd>Left</kbd>/<kbd>Right</kbd>/<kbd>Up</kbd>/<kbd>Down</kbd>): Pan, also available with middle mouse button drag <sup>0.20.1</sup>
 
 #### Color Selection Shortcuts
 
@@ -136,9 +136,9 @@ right-click-copy = false
 no-window-decoration = true
 # experimental feature: adjust history size for brush input smoothing (0: disabled, default: 0, try e.g. 5 or 10)
 brush-smooth-history-size = 10
-# experimental feature (NEXTRELEASE): The pan step size to use when panning with arrow keys.
+# experimental feature (0.20.1): The pan step size to use when panning with arrow keys.
 pan-step-size = 50.0
-# experimental feature (NEXTRELEASE): The zoom factor to use for the image.
+# experimental feature (0.20.1): The zoom factor to use for the image.
 # 1.0 means no zooming.
 zoom-factor = 1.1
 
@@ -245,9 +245,9 @@ Options:
       --action-on-enter <ACTION_ON_ENTER>
           Action to perform when pressing Enter. Preferably use the `actions_on_enter` option instead [possible values: save-to-clipboard, save-to-file, exit]
       --zoom-factor <ZOOM_FACTOR>
-          Experimental feature (NEXTRELEASE): The zoom factor to use for the image. 1.0 means no zoom. defaults to 1.1
+          Experimental feature (0.20.1): The zoom factor to use for the image. 1.0 means no zoom. defaults to 1.1
       --pan-step-size <PAN_STEP_SIZE>
-          Experimental feature (NEXTRELEASE): The pan step size to use when panning with arrow keys. defaults to 50.0
+          Experimental feature (0.20.1): The pan step size to use when panning with arrow keys. defaults to 50.0
   -h, --help
           Print help
   -V, --version
@@ -319,7 +319,7 @@ PREFIX=/usr/local make install
 PREFIX=/usr/local make uninstall
 ```
 
-### Flatpak <sup>NEXTRELEASE</sup>
+### Flatpak <sup>0.20.1</sup>
 
 Satty is available as a Flatpak bundle. Pre-built bundles are automatically created for each release and can be downloaded from the [GitHub Releases](https://github.com/Satty-org/Satty/releases) page.
 
